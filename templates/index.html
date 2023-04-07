@@ -2,12 +2,23 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
         <link rel="shortcut icon" href="http://www.nashdomuk.ru/image/news.jpg" type="image/png">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     </head>
 
     <body>
         <hr id="line" />
+        <div class="button_container">
+            <button class="button main_button" id="main_button">Главная</button>
+            <button id="about_button">О компании</button>
+            <button id="news_button">Новости</button>
+            <button id="reporting_button">Отчётность</button>
+            <button id="services_button">Услуги</button>
+            <button id="questions_button">Вопросы</button>
+            <button id="legislation_button">Законодательство</button>
+            <button id="gallery_button">Галерея</button>
+        </div>
         <div class="six"><h1><span>АО «Арзамасский дом»</span></h1></div>
         <nav class="wave-nav bottom left white" role="navigation">
             <ul id="wave" class="right">
@@ -24,14 +35,4 @@
                     <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite> </filter>
             </defs>
         </svg>
-        <!-- <div class="button_container">
-            <button id="main_button">Главная</button>
-            <button id="about_button">О компании</button>
-            <button id="news_button">Новости</button>
-            <button id="reporting_button">Отчётность</button>
-            <button id="services_button">Услуги</button>
-            <button id="questions_button">Вопросы</button>
-            <button id="legislation_button">Законодательство</button>
-            <button id="gallery_button">Галерея</button>
-        </div> -->
     </body>
