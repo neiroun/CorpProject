@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent; 
 } 
 
-#line, .six, #border {
+#line, .six {
     position: absolute;
 }
 
@@ -25,6 +25,7 @@ html,body{
     margin: 0 5% 0 5%;
     border: 10px solid;
     border-bottom: 0;
+    border-color: #D5D5D5;
     outline: none;
     width: 90%;
     height: 200px;
@@ -49,7 +50,7 @@ html,body{
 
 .six h1 {
     font-weight: normal;
-    font-family: 'Merriweather', serif;
+    font-family: 'courier';
     position: relative;
     display: inline-block;
     margin: 0;
@@ -107,7 +108,7 @@ html,body{
 .blue #wave{background:#00bff3}
 .white #wave{background:#1b2631}
 .left #wave{left:50px}
-.right #wave{right:50px}
+.right #wave{right:50px;}
 .wave-svg{position:absolute;bottom:0}
 #wave{height:20px;width:80px;position:absolute;bottom:0;margin:0 auto;text-align:center}
 #wave li{position:absolute;display:inline-block;list-style:none;height:20px;width:20px;border-radius:200%}
@@ -115,14 +116,4 @@ html,body{
 #wave li:nth-child(1){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.2s;animation-delay:0.2s;left:0}
 #wave li:nth-child(2){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.4s;animation-delay:0.4s;left:50%;margin-left:-10px}
 #wave li:nth-child(3){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.6s;animation-delay:0.6s;right:0}@-webkit-keyframes water{0%{-webkit-transform:translateY(10px)}50%{-webkit-transform:translateY(-45px)}100%{-webkit-transform:translateY(10px)}}@keyframes water{0%{-webkit-transform:translateY(10px);transform:translateY(10px)}50%{-webkit-transform:translateY(-45px);transform:translateY(-45px)}100%{-webkit-transform:translateY(10px);transform:translateY(10px)}}
-.wave-nav-two{height:20px;width:100%;position:absolute;bottom:-20px!important;z-index:10}
 #wave{-webkit-filter:url("#water");filter:url("#water")}
-
-#border {
-    height: 20px;
-    width: 90%;
-    outline: none;
-    border: 0;
-    background-color: #1b2631;
-    top: 200px;
-}
