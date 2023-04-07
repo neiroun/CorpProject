@@ -1,164 +1,128 @@
 
-html { 
+html,body{
     padding: 0;
-    margin: 0;
-    width: 100%;
+    margin: 0 0 0 0;
     height: 100%;
-}
-
-body {
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    /* overflow-x: hidden; */
+    background-color: #1b2631;
 }
 
 * {
     -webkit-tap-highlight-color: transparent; 
 } 
 
-hr, #text, .button_container {
+#line, .six, #border {
     position: absolute;
 }
 
-hr {
-    margin-top: 0;
+#line {
+    left: -10px;
+    right: -10px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 5% 0 5%;
+    border: 10px solid;
+    border-bottom: 0;
+    outline: none;
+    width: 90%;
+    height: 200px;
+    background-color: #f9e79f;
+    z-index: 1;
+}
+
+.six {
+    top: 0;
     left: 0;
     width: 100%;
     height: 200px;
     border: none;
     color: #333;
-    background-color: #FEFE22;
+    background-color: #f9e79f;
+    background: none;
+    border: none;
+    padding: 70px 0;
+    text-align: center;
     z-index: 1;
 }
 
-.button {
-    display: block;
-    font-size: 14pt;
+.six h1 {
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    color: #DC143C;
+    font-size: 40px;
+    padding: .4em 1em .55em;
 }
-
-.button_container {
-    top: 10%;
-    z-index: 2;
+.six h1:before,
+.six h1:after {
+    content: ""; 
+    position: absolute;
+    width: 60%;
+    height: .1em;
+    background: #294200; 
 }
-
-#text {
+.six h1:before {
+    left: 0;
     top: 0;
-    z-index: 2;
 }
-#main_button{
-  width: 130px;
-  height: 40px;
-  color: #FFF; /* текст в покое*/
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
+.six h1:after {
+    right: 0;
+    bottom: 0;
 }
-#main_button{
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;   /*  градиент*/
-  background: rgb(127,199,255);
-  background: linear-gradient(0deg, rgba(127,199,255,1) 0%, rgba(127,199,255,1) 100%);
+.six h1 span:before,
+.six h1 span:after {
+    content: ""; 
+    position: absolute;
+    width: .65em;
+    height: .65em;
+    border: .1em solid #294200;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
-#main_button:hover {
-  color: #FFF94a;  /* надпись после наведения*/
-  background: transparent;
-   box-shadow:none;
+.six h1 span:before {
+    top: -.55em;
+    left: -.325em;
 }
-#main_button:before,
-#main_button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #FFF94a;  /* линии кооторые едут*/
-  box-shadow:
-   -1px -1px 5px 0px #fff,
-   7px 7px 20px 0px #0003,
-   4px 4px 5px 0px #0002;
-  transition:400ms ease all;
+.six h1 span:after {
+    bottom: -.55em;
+    right: -.325em;
 }
-#main_button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
+@media (max-width: 600px) {
+.six h1 {font-size: 2em;}
 }
-#main_button:hover:before,
-#main_button:hover:after{
-   width:100%;
-   transition:800ms ease all;
+@media (max-width: 450px) {
+.six h1 {font-size: 1.5em;}
 }
+.wave-nav{top:210px;height:20px;width:90%;position:absolute;margin:0 5% 0 5%;z-index:1}
+.wave-nav.blue{background:#00bff3}
+.wave-nav.white{background:#1b2631}
+.wave-nav #navigation{display:inline-block;list-style:none}
+.wave-nav #navigation li{height:70px;width:70px;display:inline-block}
+.wave-nav #navigation li i{font-size:3em;color:#1b2631;outline: none;}
+.blue #wave{background:#00bff3}
+.white #wave{background:#1b2631}
+.left #wave{left:50px}
+.right #wave{right:50px}
+.wave-svg{position:absolute;bottom:0}
+#wave{height:20px;width:80px;position:absolute;bottom:0;margin:0 auto;text-align:center}
+#wave li{position:absolute;display:inline-block;list-style:none;height:20px;width:20px;border-radius:200%}
+.blue #wave li{background:#00bff3}.white #wave li{background:#1b2631}
+#wave li:nth-child(1){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.2s;animation-delay:0.2s;left:0}
+#wave li:nth-child(2){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.4s;animation-delay:0.4s;left:50%;margin-left:-10px}
+#wave li:nth-child(3){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.6s;animation-delay:0.6s;right:0}@-webkit-keyframes water{0%{-webkit-transform:translateY(10px)}50%{-webkit-transform:translateY(-45px)}100%{-webkit-transform:translateY(10px)}}@keyframes water{0%{-webkit-transform:translateY(10px);transform:translateY(10px)}50%{-webkit-transform:translateY(-45px);transform:translateY(-45px)}100%{-webkit-transform:translateY(10px);transform:translateY(10px)}}
+.wave-nav-two{height:20px;width:100%;position:absolute;bottom:-20px!important;z-index:10}
+#wave{-webkit-filter:url("#water");filter:url("#water")}
 
-#about_button {
-  width: 130px;
-  height: 40px;
-  color: #FFF; /* текст в покое*/
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
+#border {
+    height: 20px;
+    width: 90%;
+    outline: none;
+    border: 0;
+    background-color: #1b2631;
+    top: 200px;
 }
-#about_button {
-  width: 130px;
-  height: 40px;
-  line-height: 400px;
-  padding: 0;
-  border: none;   /*  градиент*/
-  background: rgb(127,199,255);
-  background: linear-gradient(0deg, rgba(127,199,255,1) 0%, rgba(127,199,255,1) 100%);
-}
-#about_button:hover {
-  color: #FFF94a;  /* надпись после наведения*/
-  background: transparent;
-   box-shadow:none;
-}
-#about_button:before,
-#about_button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #FFF94a;  /* линии кооторые едут*/
-  box-shadow:
-   -1px -1px 5px 0px #fff,
-   7px 7px 20px 0px #0003,
-   4px 4px 5px 0px #0002;
-  transition:400ms ease all;
-}
-#about_button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-#about_button:hover:before,
-#about_button:hover:after{
-   width:100%;
-   transition:800ms ease all;
-}
-
