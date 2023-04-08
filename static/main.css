@@ -35,7 +35,7 @@ html,body{
 
 
 
-#main_button {
+.button {
     text-decoration: none;
     display: inline-block;
     margin: 10px 20px;
