@@ -51,6 +51,9 @@ html,body{
     margin-right: -4.28%;
     background: #1b2631;
     z-index: 3;
+    font-family: 'Monospace';
+    font-size: 12pt;
+    
 }
 .button:after {
     content: "";
@@ -185,7 +188,10 @@ H1 {
   #glass_button{
     width: 0.5%;
     height: 43px;
-    background: url(https://cdn-icons-png.flaticon.com/512/64/64673.png);
-    background-size: 100% 100%;
+    background: url(https://cdn-icons-png.flaticon.com/512/64/64673.png)center center  no-repeat;
+    background-size: 80% 80%;
     border-image: none;
   }
+#legislation_button{
+    padding-left: 18px;
+}
