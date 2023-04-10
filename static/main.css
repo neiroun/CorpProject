@@ -18,15 +18,13 @@ html,body{
 }
 
 #line {
-    border-radius: 5px;
-    left: -10px;
-    right: -10px;
+    border-radius: 0.5vw;
+    left: -0.6vw;
     overflow: hidden;
     padding: 0;
     margin: 0 5% 0 5%;
     border: 10px solid;
     border-bottom: 0;
-
     border-color: #F3F4F5;
     outline: none;
     width: 90%;
@@ -81,14 +79,15 @@ html,body{
 .six {
     top: 0;
     left: 0;
-    width: 100%;
+    margin: 70px 5% 0 5%;
+    width: 90%;
     height: 200px;
     border: none;
     color: #333;
     background-color: #f9e79f;
     background: none;
     border: none;
-    padding: 70px 0;
+    padding: 0;
     text-align: center;
     z-index: 1;
 }
@@ -177,7 +176,7 @@ H1 {
       -3px 3px 2px #BBB,
       3px 3px 2px #BBB,
       3px -3px 2px #BBB;
-    color: steelblue;
+    color: #DC143C;
     transition: all 1s;
   }
   
@@ -185,13 +184,41 @@ H1 {
     color: yellowgreen;
   }
 
-  #glass_button{
+#glass_button{
     width: 0.5%;
     height: 43px;
-    background: url(https://cdn-icons-png.flaticon.com/512/64/64673.png)center center  no-repeat;
-    background-size: 80% 80%;
+    background: url('lupa.png') center center  no-repeat;
+    background-size: 110% 110%;
     border-image: none;
-  }
+    bottom: 5px;
+}
+
+#glass_button:hover {
+    background-size: 140% 140%;
+    z-index: 3;
+}
+
+#glass_button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    z-index: 3;
+    
+}
+#glass_button:hover:after {
+    border-color: #f1c40f;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
 #legislation_button{
     padding-left: 18px;
 }
