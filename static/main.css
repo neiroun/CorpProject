@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent; 
 } 
 
-#line, .six, .button {
+#line, #background, #emblem, .about_us, .six, .button {
     position: absolute;
 }
 
@@ -162,7 +162,7 @@ html,body{
 #wave li:nth-child(3){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.6s;animation-delay:0.6s;right:0}@-webkit-keyframes water{0%{-webkit-transform:translateY(10px)}50%{-webkit-transform:translateY(-45px)}100%{-webkit-transform:translateY(10px)}}@keyframes water{0%{-webkit-transform:translateY(10px);transform:translateY(10px)}50%{-webkit-transform:translateY(-45px);transform:translateY(-45px)}100%{-webkit-transform:translateY(10px);transform:translateY(10px)}}
 #wave{-webkit-filter:url("#water");filter:url("#water")}
 
-H1 {
+#firm_name {
     text-shadow:
       -1px -1px #FFF,
       -2px -2px #FFF,
@@ -180,7 +180,7 @@ H1 {
     transition: all 1s;
   }
   
-  H1:hover {
+  #firm_name:hover {
     color: yellowgreen;
   }
 
@@ -221,4 +221,24 @@ H1 {
 
 #legislation_button{
     padding-left: 18px;
+}
+
+#background {
+    right: 4.5%;
+    width: 80%;
+    height: 200px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
+    
+}
+
+#emblem {
+    width: calc(100% / 14);
+    left: 16.8%;
+    margin-top: 1.65%;
+}
+
+#header {
+    margin-left: 1000%;
 }
