@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent; 
 } 
 
-#line, #background, #emblem, .about_us, .six, .button {
+#line, #background, #emblem, .about_us, .six, .button1, .button2 {
     position: absolute;
 }
 
@@ -33,7 +33,7 @@ html,body{
     z-index: 1;
 }
 
-.button {
+.button1 {
     text-decoration: none;
     display: inline-block;
     margin: 10px 20px;
@@ -50,10 +50,10 @@ html,body{
     background: #1b2631;
     z-index: 3;
     font-family: 'Monospace';
-    font-size: 12pt;
+    font-size: 15pt;
     
 }
-.button:after {
+.button1:after {
     content: "";
     position: absolute;
     top: 0;
@@ -68,13 +68,12 @@ html,body{
     z-index: 3;
     
 }
-.button:hover:after {
+.button1:hover:after {
     border-color: #f1c40f;
     width: calc(100% - 10px);
     height: calc(100% + 10px);
     z-index: 3;
 }
-
 
 .six {
     top: 0;
@@ -90,6 +89,54 @@ html,body{
     padding: 0;
     text-align: center;
     z-index: 1;
+}
+.button2 {
+   width: 10.5%;
+   overflow: hidden;
+   z-index: 1;
+   padding: 10px 40px;
+   margin: 0 20px;
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-weight: 600;
+   line-height: 30px;
+   color: #1b2631; /*текст */
+   font-size: 15px;
+   text-transform: uppercase;
+   background: #fde910; /* цвет у кнопки */
+   border-width: 0;
+   /*box-shadow: 5px 5px 0 #532831;  тень для боковых клеток*/
+   outline: none;
+   cursor: pointer;
+   transition: 1.5s;
+   margin-left: 6.7%;
+   border-radius: 15px;
+}
+.button2:before, .button2:after {
+   content: "";
+   position: absolute;
+   height: 200px;
+   left: -50%;
+   margin-top: -100px;
+   top: 50%;
+   width: 200px;
+   border-radius: 50%;
+   opacity: 0.3;
+   z-index: -1;
+   transform: scale(0);
+}
+.button2:before {
+   background: #64bafd;
+   transition: .8s ease-out;
+}
+.button2:after {
+   transition: .4s ease-in .3s;
+}
+.button2:hover {
+   color: #532831;
+}
+.button2:hover:before, .button2:hover:after {
+   opacity: 1;
+   transform: scale(4);
 }
 
 .six h1 {
@@ -220,12 +267,12 @@ html,body{
 }
 
 #legislation_button{
-    padding-left: 33px;
+    padding-left: 1.05%;
 }
 
 #background {
     right: 4.5%;
-    width: 80%;
+    width: 74%;
     height: 200px;
     background-color: #f2f3f4;
     border: 2px solid #f2f3f4;
@@ -233,10 +280,9 @@ html,body{
 }
 
 #background_button {
-
     margin-left: 4.5%;
-    width: 10%;
-    height: 500px;
+    width: 15%;
+    height: 470px;
     background-color: #f2f3f4;
     border: 2px solid #f2f3f4;
     border-radius: 20px;
@@ -244,12 +290,36 @@ html,body{
 
 #emblem {
     width: calc(100% / 14);
-    left: 16.8%;
+    left: 22.8%;
     margin-top: 1.65%;
 }
 
 #header {
-    margin-left: 900%;
+    margin-left: 1000%;
     margin-top: 20%;
     font-family: 'courier'
 }
+#news_button2{
+    margin-top: 2%;
+}
+
+#documentation_button{
+    margin-top: 6%;
+}
+
+#gallery_button2{
+    margin-top: 10%;
+}
+#reviews_button {
+    margin-top: 14%;
+}
+
+#info_button{
+    margin-top: 18%;
+
+}
+#questions_button2{
+    margin-top: 22%;
+
+}
+
