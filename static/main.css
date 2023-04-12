@@ -43,7 +43,7 @@ html,body{
     color: #f1c40f;
     font-family: 'Montserrat', sans-serif;
     transition: .4s;
-    margin-top: 12%;
+    margin-top: 12.5%;
     margin-left: 4.5%;
     width: 10.5%;
     margin-right: -4.28%;
@@ -220,7 +220,7 @@ html,body{
 }
 
 #legislation_button{
-    padding-left: 18px;
+    padding-left: 33px;
 }
 
 #background {
@@ -230,7 +230,16 @@ html,body{
     background-color: #f2f3f4;
     border: 2px solid #f2f3f4;
     border-radius: 20px;
-    
+}
+
+#background_button {
+
+    margin-left: 4.5%;
+    width: 10%;
+    height: 500px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
 }
 
 #emblem {
@@ -240,5 +249,7 @@ html,body{
 }
 
 #header {
-    margin-left: 1000%;
+    margin-left: 900%;
+    margin-top: 20%;
+    font-family: 'courier'
 }
