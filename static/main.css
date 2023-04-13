@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent; 
 } 
 
-#line, #background, #emblem, .about_us, .six, .button1, .button2, .map {
+#line, #background, #emblem, .about_us, .six, .button1, .button2, .map, .contacts, #background_contacts {
     position: absolute;
 }
 
@@ -273,7 +273,7 @@ html,body{
 #background {
     right: 4.5%;
     width: 74%;
-    height: 350px;
+    height: 200px;
     background-color: #f2f3f4;
     border: 2px solid #f2f3f4;
     border-radius: 20px;
@@ -288,16 +288,26 @@ html,body{
     border-radius: 20px;
 }
 
+#background_contacts{
+    right: 4.5%;
+    width: 74%;
+    height: 350px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
+    margin-top: 13%;
+}
+
 #emblem {
     width: calc(100% / 14);
     left: 22.8%;
-    margin-top: 5.65%;
+    margin-top: 1.65%;
 }
 
 #header {
     margin-left: 1000%;
     margin-top: 20%;
-    font-family: 'courier'
+    font-family: 'Montserrat', sans-serif;
 }
 #news_button2{
     margin-top: 2%;
@@ -324,7 +334,15 @@ html,body{
 }
 
 .map{
-    margin-top: 17.5%;
-    margin-left: 31.5%;
+    margin-top: 30.5%;
+    margin-left: 65.5%;
     z-index: 5;
+}
+.contacts{
+    margin-left: 53%;
+    margin-top: 12.5%;
+}
+#header_contacts{
+    margin-left: 0%;
+    font-family: 'Montserrat', sans-serif;
 }
