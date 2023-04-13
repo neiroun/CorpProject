@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent; 
 } 
 
-#line, #background, #emblem, .about_us, .six, .button1, .button2 {
+#line, #background, #emblem, .about_us, .six, .button1, .button2, .map {
     position: absolute;
 }
 
@@ -273,7 +273,7 @@ html,body{
 #background {
     right: 4.5%;
     width: 74%;
-    height: 200px;
+    height: 350px;
     background-color: #f2f3f4;
     border: 2px solid #f2f3f4;
     border-radius: 20px;
@@ -291,7 +291,7 @@ html,body{
 #emblem {
     width: calc(100% / 14);
     left: 22.8%;
-    margin-top: 1.65%;
+    margin-top: 5.65%;
 }
 
 #header {
@@ -323,3 +323,8 @@ html,body{
 
 }
 
+.map{
+    margin-top: 17.5%;
+    margin-left: 31.5%;
+    z-index: 5;
+}
