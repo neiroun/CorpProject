@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent;
 }
 
-#line, #background, .six, .button1, .button2, #background_contacts, #background, #news_company {
+#line, #background, .six, .button1, .button2, #background_contacts, #background, #news_company, .text {
     position: absolute;
 }
 
@@ -297,12 +297,6 @@ html,body{
 }
 */
 
-
-
-
-
-
-
 #background {
     right: 4.5%;
     width: 74%;
@@ -326,4 +320,14 @@ html,body{
     font-family: 'Montserrat', sans-serif;
     margin-left: 50%;
     z-index: 5;
+}
+
+.text{
+    text-indent: 1.5em;
+    text-align: justify;
+    width: 60%;
+    height: 500px;
+    left: 30%;
+    font-size: 2em;
+
 }
