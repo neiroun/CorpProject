@@ -1,5 +1,8 @@
 window.onload = () => {
-    document.getElementById('main_button').onclick  = () => {
-        console.log('ok');
+    document.getElementById('news_button').onclick = () => {
+        document.location = 'news';
+    }
+    document.getElementById('main_button').onclick = () => {
+        document.location = '/';
     }
 }
