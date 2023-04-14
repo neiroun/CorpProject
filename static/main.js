@@ -5,4 +5,7 @@ window.onload = () => {
     document.getElementById('main_button').onclick = () => {
         document.location = '/';
     }
+    document.getElementById('about_button').onclick = () => {
+        document.location = 'about';
+    }
 }

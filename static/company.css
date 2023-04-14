@@ -1,0 +1,365 @@
+
+html,body{
+    padding: 0;
+    margin: 0 0 0 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    /* overflow-x: hidden; */
+    background-color: #1b2631;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+#line, #background, .six, .button1, .button2, #background_contacts, #background, #news_company, .company, .company1, .company2 {
+    position: absolute;
+}
+
+#line {
+    border-radius: 0.5vw;
+    left: -0.6vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 5% 0 5%;
+    border: 10px solid;
+    border-bottom: 0;
+    border-color: #F3F4F5;
+    outline: none;
+    width: 90%;
+    height: 200px;
+    background-color: #F7DC6F;
+    z-index: 1;
+}
+
+.button1 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+    margin-top: 12.5%;
+    margin-left: 4.5%;
+    width: 10.5%;
+    margin-right: -4.28%;
+    background: #1b2631;
+    z-index: 3;
+    font-family: 'Monospace';
+    font-size: 15pt;
+
+}
+.button1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+    z-index: 3;
+
+}
+.button1:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+    z-index: 3;
+}
+
+.six {
+    top: 0;
+    left: 0;
+    margin: 70px 5% 0 5%;
+    width: 90%;
+    height: 200px;
+    border: none;
+    color: #333;
+    background-color: #f9e79f;
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+}
+.button2 {
+   width: 10.5%;
+   overflow: hidden;
+   z-index: 1;
+   padding: 10px 40px;
+   margin: 0 20px;
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-weight: 600;
+   line-height: 30px;
+   color: #1b2631; /*текст */
+   font-size: 15px;
+   text-transform: uppercase;
+   background: #fde910; /* цвет у кнопки */
+   border-width: 0;
+   /*box-shadow: 5px 5px 0 #532831;  тень для боковых клеток*/
+   outline: none;
+   cursor: pointer;
+   transition: 1.5s;
+   margin-left: 6.7%;
+   border-radius: 15px;
+}
+.button2:before, .button2:after {
+   content: "";
+   position: absolute;
+   height: 200px;
+   left: -50%;
+   margin-top: -100px;
+   top: 50%;
+   width: 200px;
+   border-radius: 50%;
+   opacity: 0.3;
+   z-index: -1;
+   transform: scale(0);
+}
+.button2:before {
+   background: #64bafd;
+   transition: .8s ease-out;
+}
+.button2:after {
+   transition: .4s ease-in .3s;
+}
+.button2:hover {
+   color: #532831;
+}
+.button2:hover:before, .button2:hover:after {
+   opacity: 1;
+   transform: scale(4);
+}
+
+.six h1 {
+    font-weight: normal;
+    font-family: 'courier';
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    color: #DC143C;
+    font-size: 40px;
+    padding: .4em 1em .55em;
+}
+.six h1:before,
+.six h1:after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .1em;
+    background: #294200;
+}
+.six h1:before {
+    left: 0;
+    top: 0;
+}
+.six h1:after {
+    right: 0;
+    bottom: 0;
+}
+.six h1 span:before,
+.six h1 span:after {
+    content: "";
+    position: absolute;
+    width: .65em;
+    height: .65em;
+    border: .1em solid #294200;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.six h1 span:before {
+    top: -.55em;
+    left: -.325em;
+}
+.six h1 span:after {
+    bottom: -.55em;
+    right: -.325em;
+}
+@media (max-width: 600px) {
+.six h1 {font-size: 2em;}
+}
+@media (max-width: 450px) {
+.six h1 {font-size: 1.5em;}
+}
+.wave-nav{top:210px;height:20px;width:90%;position:absolute;margin:0 5% 0 5%;z-index:1}
+.wave-nav.blue{background:#00bff3}
+.wave-nav.white{background:#1b2631}
+.wave-nav #navigation{display:inline-block;list-style:none}
+.wave-nav #navigation li{height:70px;width:70px;display:inline-block}
+.wave-nav #navigation li i{font-size:3em;color:#1b2631;outline: none;}
+.blue #wave{background:#00bff3}
+.white #wave{background:#1b2631}
+.left #wave{left:50px}
+.right #wave{right:50px;}
+.wave-svg{position:absolute;bottom:0}
+#wave{height:20px;width:80px;position:absolute;bottom:0;margin:0 auto;text-align:center}
+#wave li{position:absolute;display:inline-block;list-style:none;height:20px;width:20px;border-radius:200%}
+.blue #wave li{background:#00bff3}.white #wave li{background:#1b2631}
+#wave li:nth-child(1){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.2s;animation-delay:0.2s;left:0}
+#wave li:nth-child(2){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.4s;animation-delay:0.4s;left:50%;margin-left:-10px}
+#wave li:nth-child(3){-webkit-animation:water 1.2s infinite;animation:water 1.2s infinite;-webkit-animation-delay:0.6s;animation-delay:0.6s;right:0}@-webkit-keyframes water{0%{-webkit-transform:translateY(10px)}50%{-webkit-transform:translateY(-45px)}100%{-webkit-transform:translateY(10px)}}@keyframes water{0%{-webkit-transform:translateY(10px);transform:translateY(10px)}50%{-webkit-transform:translateY(-45px);transform:translateY(-45px)}100%{-webkit-transform:translateY(10px);transform:translateY(10px)}}
+#wave{-webkit-filter:url("#water");filter:url("#water")}
+
+#firm_name {
+    text-shadow:
+      -1px -1px #FFF,
+      -2px -2px #FFF,
+      -1px 1px #FFF,
+      -2px 2px #FFF,
+      1px 1px #FFF,
+      2px 2px #FFF,
+      1px -1px #FFF,
+      2px -2px #FFF,
+      -3px -3px 2px #BBB,
+      -3px 3px 2px #BBB,
+      3px 3px 2px #BBB,
+      3px -3px 2px #BBB;
+    color: #DC143C;
+    transition: all 1s;
+  }
+
+  #firm_name:hover {
+    color: yellowgreen;
+  }
+
+#glass_button{
+    width: 0.5%;
+    height: 43px;
+    background: url('lupa.png') center center  no-repeat;
+    background-size: 110% 110%;
+    border-image: none;
+    bottom: 5px;
+}
+
+#glass_button:hover {
+    background-size: 140% 140%;
+    z-index: 3;
+}
+
+#glass_button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    z-index: 3;
+
+}
+#glass_button:hover:after {
+    border-color: #f1c40f;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+#legislation_button{
+    padding-left: 1.05%;
+}
+
+#background {
+    right: 4.5%;
+    width: 74%;
+    height: 200px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
+}
+
+#background_button {
+    margin-left: 4.5%;
+    width: 15%;
+    height: 470px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
+}
+
+
+/*
+#emblem {
+    width: calc(100% / 14);
+    left: 22.8%;
+    margin-top: 1.65%;
+}
+*/
+
+
+
+
+
+
+
+#background {
+    right: 4.5%;
+    width: 74%;
+    height: 300px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
+}
+
+
+#background_button {
+    margin-left: 4.5%;
+    width: 15%;
+    height: 470px;
+    background-color: #f2f3f4;
+    border: 2px solid #f2f3f4;
+    border-radius: 20px;
+}
+
+#news_company{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 50%;
+    z-index: 5;
+}
+
+.company{
+    margin-left: 24%;
+    top: 36%;
+    z-index: 5;
+    height: 10;
+    line-height: 20px;
+}
+
+#address{
+    top: 40%
+}
+
+.company1{
+    margin-left: 24%;
+    top: 44%;
+    z-index: 5;
+    height: 10;
+    line-height: 20px;
+}
+
+#email{
+    top: 48%
+}
+
+.company2{
+    margin-left: 24%;
+    top: 52%;
+    z-index: 5;
+    height: 10;
+    line-height: 20px;
+}
+
+#time{
+    top: 56%
+}
