@@ -322,12 +322,3 @@ html,body{
     z-index: 5;
 }
 
-.text{
-    text-indent: 1.5em;
-    text-align: justify;
-    width: 60%;
-    height: 500px;
-    left: 30%;
-    font-size: 2em;
-
-}

@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent;
 }
 
-#line, #background, .six, .button1, .button2, #background_contacts, #background, #news_company, .company, .company1, .company2 {
+#line, #background,.map, .six, .button1, .button2, #background_contacts, #background, #news_company, .company, .company1, .company2 {
     position: absolute;
 }
 
@@ -362,4 +362,11 @@ html,body{
 
 #time{
     top: 56%
+}
+
+
+.map{
+    margin-top: 16.5%;
+    margin-left: 65.5%;
+    z-index: 5;
 }
