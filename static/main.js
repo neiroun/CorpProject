@@ -1,4 +1,4 @@
-window.onload = () => {
+    window.onload = () => {
     document.getElementById('news_button').onclick = () => {
         document.location = 'news';
     }
