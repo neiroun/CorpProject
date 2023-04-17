@@ -5,8 +5,8 @@
         <script src="{{ url_for('static', filename='main.js') }}"></script>
         <link rel="shortcut icon" href="http://www.nashdomuk.ru/image/news.jpg" type="image/png">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='company.css') }}">
-         <div class="map" >
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0356c28a8648c8796c0bb40de98a8fba18e3a49123ec49020ebdf4537321ae0&amp;width=370&amp;height=290&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0356c28a8648c8796c0bb40de98a8fba18e3a49123ec49020ebdf4537321ae0&amp;width=1000&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </head>
 
@@ -39,15 +39,26 @@
                     <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite> </filter>
             </defs>
         </svg>
-        <div>
+        <div class="company">
             <h1 id="news_company">Контакты</h1>
-            <h2 class="company">Адрес основного офиса:</h2>
-            <p id="address" class="company">607220 Нижегородская область, г.Арзамас, ул. Куликова д.33А</p>
-            <h2 class="company1">Адрес электронной почты:</h2>
-            <p id="email" class="company1">office@nashdomuk.ru</p>
-            <h2 class="company2">Режим работы:</h2>
-            <p id="time" class="company2">Понедельник-четверг:  8.00-17.00 (обед 12.00-12.48)</p>
-            <hr id="background"/>
+            <h2 id="office">Адрес основного офиса:</h2>
+            <h3 id="address" >607220 Нижегородская область, г.Арзамас, ул. Куликова д.33А</h3>
+            <h2 id="address_email">Адрес электронной почты:</h2>
+            <h3 id="email">office@nashdomuk.ru</h3>
+            <h2 id="work_time">Режим работы:</h2>
+            <h3 id="time">Понедельник-четверг: 8.00-17.00 (обед 12.00-12.48)</h3>
+            <h3 id="time2">Пятница:            8.00-16.00 (обед 12.00-12.48)</h3>
         </div>
+        <div class="row_phone">
+            <h2 id="phone">Телефоны:</h2>
+            <h3>Приёмная: 8(83147) 7-51-25.</h3>
+            <h3>Бухгалтерия: 8(83147) 7-51-30.</h3>
+            <h3>Главный инженер, Экономический отдел: 8(83147) 7-51-26</h3>
+            <h3>Производственный отдел: 8(83147) 7-51-28.</h3>
+            <h3>Технический отдел: 8(83147) 7-51-29.</h3>
+            <h3>Юридический отдел: 8(83147) 7-51-27.</h3>
+            <h3>Аварийно-диспетчерская служба:  8(83147) 2-90-03</h3>
+        </div>
+        <hr id="background"/>
         <hr id="background_button">
     </body>
