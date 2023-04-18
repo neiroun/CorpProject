@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+        <link rel="shortcut icon" href="http://www.nashdomuk.ru/image/news.jpg" type="image/png">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='questions.css') }}">
+    </head>
+
+    <body>
+        <hr id="line" />
+        <div class="button_container">
+            <button class="button1" id="main_button">Главная</button>
+            <button class="button1" id="about_button">О компании</button>
+            <button class="button1" id="news_button">Новости</button>
+            <button class="button1" id="reporting_button">Отчётность</button>
+            <button class="button1" id="services_button">Услуги</button>
+            <button class="button1" id="questions_button">Вопросы</button>
+            <button class="button1" id="legislation_button">Законодательство</button>
+            <button class="button1" id="gallery_button">Галерея</button>
+            <button class="button1" id="glass_button"></button>
+        </div>
+        <div class="six"><h1 id="firm_name" data-name="АО «Арзамасский дом»"><span>АО «Арзамасский дом»</span></h1></div>
+        <nav class="wave-nav bottom left white" role="navigation">
+            <ul id="wave" class="right">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="wave-svg">
+            <defs>
+                <filter id="water">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="goo"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite> </filter>
+            </defs>
+        </svg>
+        <div>
+            <h1 id="news_company">Вопросы</h1>
+            <hr id="background"/>
+        </div>
+
+        <hr id="background_button">
+    </body>
