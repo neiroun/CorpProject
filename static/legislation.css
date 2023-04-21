@@ -13,7 +13,7 @@ html,body{
     -webkit-tap-highlight-color: transparent;
 }
 
-#line, #background, .six, .button1, .button2, #background_contacts, #background, #news_company, .text {
+#line, .six, .button1, .button2, #background_contacts, #background, #news_company, .codex, #background {
     position: absolute;
 }
 
@@ -138,7 +138,6 @@ html,body{
    opacity: 1;
    transform: scale(4);
 }
-
 .six h1 {
     font-weight: normal;
     font-family: 'courier';
@@ -270,23 +269,8 @@ html,body{
     padding-left: 1.05%;
 }
 
-#background {
-    right: 4.5%;
-    width: 74%;
-    height: 200px;
-    background-color: #f2f3f4;
-    border: 2px solid #f2f3f4;
-    border-radius: 20px;
-}
 
-#background_button {
-    margin-left: 4.5%;
-    width: 15%;
-    height: 470px;
-    background-color: #f2f3f4;
-    border: 2px solid #f2f3f4;
-    border-radius: 20px;
-}
+
 
 
 /*
@@ -304,6 +288,7 @@ html,body{
     background-color: #f2f3f4;
     border: 2px solid #f2f3f4;
     border-radius: 20px;
+    z-index: 0;
 }
 
 
@@ -321,4 +306,15 @@ html,body{
     margin-left: 50%;
     z-index: 5;
 }
+.codex{
+    font-family: 'Montserrat', sans-serif;
+    left: 25%;
+    right: 6%;
+    z-index: 2;
+}
 
+.codex2{
+
+    margin-top: 10%;
+
+}
