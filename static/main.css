@@ -13,9 +13,15 @@ html,body{
     -webkit-tap-highlight-color: transparent; 
 } 
 
-#line, #background, #emblem, .about_us, .six, .button1, .button2, .text, .contacts, #background_contacts, #txt {
+#line, #background, #emblem, .upward, .six, .button1, .button2, .text, .contacts, #background_contacts {
     position: absolute;
 }
+
+.upward{
+    width: 100%;
+    height: 200px;
+}
+
 
 #line {
     border-radius: 0.5vw;
@@ -102,7 +108,7 @@ html,body{
    color: #1b2631; /*текст */
    font-size: 15px;
    text-transform: uppercase;
-   background: #fde910; /* цвет у кнопки */
+   background: #fcdd09; /* цвет у кнопки */
    border-width: 0;
    /*box-shadow: 5px 5px 0 #532831;  тень для боковых клеток*/
    outline: none;
@@ -125,7 +131,7 @@ html,body{
    transform: scale(0);
 }
 .button2:before {
-   background: #64bafd;
+   background: #078930;
    transition: .8s ease-out;
 }
 .button2:after {
@@ -239,7 +245,7 @@ html,body{
     border-image: none;
     bottom: 5px;
 }
-
+/*
 #glass_button:hover {
     background-size: 140% 140%;
     z-index: 3;
@@ -264,7 +270,7 @@ html,body{
     width: 100%;
     height: 100%;
     z-index: 3;
-}
+}*/
 
 #legislation_button{
     padding-left: 1.05%;
@@ -304,12 +310,6 @@ html,body{
     margin-top: 1.65%;
 }
 
-.about_us{
-    left: 48%;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
 #news_button2{
     margin-top: 2%;
 }
@@ -345,45 +345,48 @@ html,body{
     font-family: 'Montserrat', sans-serif;
 }
 */
+#header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
 .text{
     text-indent: 1.5em;
     text-align: justify;
     width: 50%;
     height: 500px;
     left: 35%;
-    margin-top: 3%;
     font-size: 1.5em;
     z-index: 4;
 
 }
 
-#txt {
+.txt {
     font-size: 80px;
     text-align: center;
-    margin-top: 3%;
-    margin-left: 30%;
+    position: relative;
     color: #FFF;
-    background: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2952.jpg) repeat-x;
+    z-index: 2;
+    background: url(https://phonoteka.org/uploads/posts/2022-01/1642659457_1-phonoteka-org-p-chernii-fon-gradient-1.jpg) repeat-x;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: gradient;
     animation-duration: 30s;
     animation-iteration-count: infinite;
-    z-index: 10;
     font-family: Arial, sans-serif;
-
 }
 
 @keyframes gradient {
 
     0% {
-        background-position: -700% 0;
+        background-position: -300% 0;
     }
     50% {
-        background-position: 700% 0;
+        background-position: 300% 0;
     }
     100% {
-        background-position: -700% 0;
+        background-position: -300% 0;
     }
 
 }
